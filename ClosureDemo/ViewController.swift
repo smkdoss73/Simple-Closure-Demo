@@ -8,6 +8,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var lblClosureResponse: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -15,8 +16,11 @@ class ViewController: UIViewController {
         myClosure(param: "Kalidoss") { (message, status) in
             if status {
                 print("Response:", message)
+                lblClosureResponse.text = message
             }else{
                 print("Failure")
+                lblClosureResponse.text = "Failure"
+
             }
             
         }
