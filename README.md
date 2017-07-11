@@ -1,8 +1,9 @@
-# ClosureDemo
+# Simple Closure Demo
 
 # First Closure Call
 
 myClosure(param: "Kalidoss") { (message, status) in
+  
   if status {
     print("Response:", message)
   }else{
@@ -16,6 +17,8 @@ myClosure(param: "Kalidoss") { (message, status) in
 
 
 closureDemo(datas: ["Kali","Doss"]) { (stringArray) in
+
   print("\n String array --> :", stringArray)
+  
 }
 
