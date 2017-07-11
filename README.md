@@ -1,18 +1,21 @@
 # ClosureDemo
 
-//MARK: First Closure Call
+# First Closure Call
+
 myClosure(param: "Kalidoss") { (message, status) in
-if status {
-print("Response:", message)
-}else{
-print("Failure")
-}
+  if status {
+    print("Response:", message)
+  }else{
+    print("Failure")
+  }
 
 }
 
 
-//MARK: Second Closure Call
+# Second Closure Call
+
+
 closureDemo(datas: ["Kali","Doss"]) { (stringArray) in
-print("\n String array --> :", stringArray)
+  print("\n String array --> :", stringArray)
 }
 
